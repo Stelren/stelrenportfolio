@@ -1,0 +1,197 @@
+body {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+body {
+  animation: fadeInAnimation ease s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.bgdarker {
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.95;
+  background-position: 100%;
+  position: absolute;
+  background-attachment: fixed;
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+
+  /* /* background: rgb(26, 39, 64); */
+  background: radial-gradient(
+    circle,
+    rgba(26, 39, 64, 1) 0%,
+    rgb(1, 0, 9) 100%
+  );
+}
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  background-position: 100%;
+  position: absolute;
+  background-attachment: fixed;
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url(img/newbackground.png);
+  /* background: rgb(26, 39, 64);
+  background: radial-gradient(
+    circle,
+    rgba(26, 39, 64, 1) 0%,
+    rgb(1, 0, 9) 100%
+  ); */
+}
+.welcomemessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  font-family: impact;
+  font-size: 200px;
+  max-width: 0%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: appear 4s ease-in-out 0.3s 1 normal forwards;
+}
+
+.welcomebruh {
+  max-width: 0%;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  font-family: impact;
+  font-size: 200px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  /* animation: disappear 3s ease-in 0.5s 1 normal forwards; */
+}
+
+.design2box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* gap: 10px; */
+  transition: gap 1s;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  visibility: visible;
+  /* opacity: 0; */
+  transition: opacity 2s;
+  overflow: hidden;
+}
+.design2insidebox {
+  font-size: 80px;
+  font-family: "Bebas Neue";
+
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 100% 2;
+  /* background-color: rgba(188, 188, 188, 0.5); */
+  /* opacity: 0.5; */
+  transition: font-size background-color 1s;
+  transition: font-size 0.3s, box-shadow 0.3s, background-color 1s, color 1s;
+
+  cursor: pointer;
+  /* border: solid 2px white; */
+  visibility: hidden;
+  animation: visibleButtons 2s ease-in-out 5s 1 normal forwards;
+}
+.design2insidebox:hover {
+  background-color: rgb(0, 145, 255);
+}
+@keyframes visibleButtons {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    max-width: 50%;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    max-width: 50%;
+  }
+  50% {
+    opacity: 0;
+    max-width: 0%;
+  }
+}
+/* .goback {
+  margin: 1500px 0px;
+  font-size: 80px;
+  font-family: "Bebas Neue";
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  padding: 60px;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  background-color: rgba(188, 188, 188, 0.5);
+  transition: font-size background-color 1s;
+  transition: font-size 0.3s, box-shadow 0.3s, background-color 1s, color 1s;
+  animation: visibleButtons 2s ease-in-out 5s 1 normal forwards;
+  text-decoration: none;
+  text-transform: uppercase;
+  visibility: hidden;
+}
+
+.goback:hover {
+  cursor: pointer;
+  background-color: rgb(0, 145, 255);
+} */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

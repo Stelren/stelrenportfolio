@@ -1,0 +1,193 @@
+html,
+body {
+  margin: 0 auto;
+  /* overflow: hidden; */
+  white-space: nowrap;
+  height: auto;
+  background: rgb(232, 232, 232);
+}
+html {
+}
+body {
+  animation: fadeInAnimation ease s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    scale: 0.9;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.menu {
+  display: grid;
+  /* gap: 20px; */
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 5.5%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  grid-template-columns: 100%;
+  grid-template-rows: 20%;
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+  width: 10%;
+  z-index: 100;
+}
+
+.menuButton {
+  /* height: 200; */
+  width: 1920;
+  padding: 37%;
+  font-size: 50px;
+  font-family: "Bebas Neue";
+  text-decoration: none;
+  /* padding: 20%; */
+  color: white;
+  transition: color 0.6s, background-color 0.6s, padding 0.3s;
+  /* border-radius: 75px; */
+  margin: 0 auto;
+}
+.menuButton:hover {
+  background-color: rgb(0, 145, 255);
+  color: white;
+}
+.backgroundimage {
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+  background-attachment: fixed;
+  text-align: center;
+  margin: 0 auto;
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  /* background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(1, 0, 9) 100%); */
+}
+
+/* .footer {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  margin: 10px 0px;
+  font-size: 20px;
+  font-family: "Marcellus";
+  text-align: center;
+} */
+
+.topBar {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 50px 0px;
+  align-items: center;
+  /* padding: 20px; */
+  /* margin-bottom: 5px; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  height: 7%;
+  background-color: rgb(255, 255, 255);
+  /* row-gap: 120px; */
+  transition: opacity 3s;
+}
+.topBarButton {
+  margin-right: 0px;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(145, 155, 167);
+  font-family: "Bebas Neue";
+  padding: 10px 20px;
+
+  transition: color 0.3s;
+}
+.topBarButton:hover {
+  color: rgb(21, 21, 21);
+  background-color: rgb(255, 255, 255);
+}
+#other {
+  margin-right: 100px;
+}
+
+.goback {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(145, 155, 167);
+  font-family: "Bebas Neue";
+  /* padding: 20px 65px; */
+  /* margin: -20px; */
+  padding: 10px 5px;
+  border-radius: 50px;
+  /* border-top-left-radius: 0px; */
+  /* border-bottom-left-radius: 0px; */
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+  margin-right: 1050px;
+  transition: color 0.3s;
+}
+
+.goback:hover {
+  color: rgb(0, 0, 0);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.activeButton {
+  margin-right: 0px;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  font-family: "Bebas Neue";
+  padding: 10px 20px;
+
+  color: rgb(55, 121, 255);
+}
+.graphicDesignGallery {
+  padding: 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #f2f2f2;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  grid-auto-flow: dense;
+}
+
+.graphicDesignGallery img {
+  width: 100%;
+  /* height: 100%; */
+  background-color: white;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.galleryimage2 {
+  grid-column: 1 / 4;
+}
+
+.galleryimage5 {
+  grid-column: 1 / 4;
+}
+.galleryimage1:hover {
+  scale: 1.05;
+}
+.galleryimage2:hover {
+  scale: 1.05;
+}
+.galleryimage3:hover {
+  scale: 1.05;
+}
+.galleryimage4:hover {
+  scale: 1.05;
+}
