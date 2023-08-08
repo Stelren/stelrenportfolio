@@ -193,7 +193,7 @@ body {
   }
   .activeButton {
     font-size: 17.5px;
-    margin-left: 125px;
+
   }
   #other {
     margin-right: 15px;
@@ -205,7 +205,7 @@ body {
   }
   .activeButton {
     font-size: 12.5px;
-    margin-left: 125px;
+
   }
   #other {
     margin-right: 0px;
@@ -217,7 +217,7 @@ body {
   }
   .activeButton {
     font-size: 15px;
-    margin-left: 125px;
+
   }
   #other {
     margin-right: 5px;
