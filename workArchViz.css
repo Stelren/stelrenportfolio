@@ -191,3 +191,39 @@ body {
 .galleryimage4:hover {
   scale: 1.05;
 }
+@media screen and (max-width: 500px) and (min-width: 400px) {
+  .topBarButton {
+    font-size: 17.5px;
+  }
+  .activeButton {
+    font-size: 17.5px;
+    margin-left: 125px;
+  }
+  #other {
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 399px) and (min-width: 300px) {
+  .topBarButton {
+    font-size: 12.5px;
+  }
+  .activeButton {
+    font-size: 12.5px;
+    margin-left: 125px;
+  }
+  #other {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 299px) {
+  .topBarButton {
+    font-size: 15px;
+  }
+  .activeButton {
+    font-size: 15px;
+    margin-left: 125px;
+  }
+  #other {
+    margin-right: 5px;
+  }
+}
